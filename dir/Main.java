@@ -12,10 +12,6 @@ class Main
 	public void initalize()
 	{
 		chdir ch = new chdir();
-		ch.mychdir();
-		//ch.show();
-		ch.Split();
-
 		ch.setdir();
 	}
 
