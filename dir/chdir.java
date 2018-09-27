@@ -54,8 +54,8 @@ public class chdir
     }
     public void setdir()
     {
-	System.setProperty("user.dir", "/data/data/com.termux/");
-	System.out.println(System.getProperty("user.dir"));
+	System.setProperty("usr.dir", "/data/data/com.termux/");
+	System.out.println(System.getProperty("usr.dir"));
     }
     public void ch()
     {
