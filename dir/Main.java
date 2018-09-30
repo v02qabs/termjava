@@ -1,3 +1,5 @@
+import java.io.*;
+
 class Main
 {
 	public Main()
@@ -13,7 +15,26 @@ class Main
 	{
 		chdir ch = new chdir();
 		ch.setdir();
+		getls();
 	}
+    public void getls()
+    {
+	try
+	    {
+		System.out.println("Your change dir path: ");
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		String dir = br.readLine();
+		System.setProperty("usr.dir", dir);
+		exec e = new exec();
+		e.getReturn("ls " + System.getProperty("usr.dir"));
+	    }
+	catch(Exception error)
+	    {
+		System.out.println("error.");
+	    }
+	
+    }
+    
 
 }
 
