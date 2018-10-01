@@ -1,0 +1,1 @@
+ecj *.java -d ../bin -cp ../lib/sqlite3.jar
