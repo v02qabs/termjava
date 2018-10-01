@@ -17,6 +17,8 @@ class exec
 			if(l == null)
 			    break;
 			System.out.println(l);
+			gCom g = new gCom();
+			g.commands(l);
 		    }
 		
 		br.close();

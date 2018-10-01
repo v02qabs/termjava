@@ -1,0 +1,15 @@
+
+class gCom
+{
+    public gCom()
+    {
+	System.out.println("gCom");
+    }
+    public void commands(String command)
+    {
+	System.out.println("carry out command: " + command);
+	chdir c = new chdir();
+        String c  = command;
+	System.out.println(c.Split());
+    }
+}

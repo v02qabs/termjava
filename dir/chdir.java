@@ -10,6 +10,8 @@ public class chdir
 	System.out.println(message);
     }
     String in;
+    String in1;
+    String in2;
     public String mychdir()
     {
 	show("移動したいディレクトリやファイル名を入力してください。");
@@ -31,9 +33,9 @@ public class chdir
     {
 	show("文字列の分割");
 	String s1[] = in.split(" ");
-	in = s1[1];
+	in1 = s1[0];
+	in2 = s1[1];
         str = in;
-	show(str);
 	return str;
     }
     public String chdir_change()

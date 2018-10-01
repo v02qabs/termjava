@@ -25,8 +25,8 @@ class Main
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		String dir = br.readLine();
 		System.setProperty("usr.dir", dir);
-		exec e = new exec();
-		e.getReturn("ls " + System.getProperty("usr.dir"));
+		//exec e = new exec();
+		getCommand(dir);
 	    }
 	catch(Exception error)
 	    {
@@ -34,7 +34,10 @@ class Main
 	    }
 	
     }
-    
-
+    public void getCommand(String command)
+    {
+	gCom gc = new gCom();
+	gc.commands(command);
+    }
 }
 
