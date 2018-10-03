@@ -1,0 +1,7 @@
+cd ./src/
+
+ecj chdir/*.java -d ../bin
+
+cd ../bin
+
+dx --dex --output=../dist/Main.jar chdir/*.class
