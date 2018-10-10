@@ -1,0 +1,1 @@
+ecj AXMLPrinter.java -cp /data/data/com.termux/files/usr/share/visible-xml/*.jar
