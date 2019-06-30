@@ -1,0 +1,1 @@
+dalvikvm -cp hello.jar hello
