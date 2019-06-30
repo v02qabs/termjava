@@ -1,4 +1,0 @@
-cd ./src
-ecj *.jar -d ../bin
-cd ../bin
-dx --dex --output=../dist/Main.jar *.class
