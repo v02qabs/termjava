@@ -13,9 +13,6 @@ public class Main
 		{
 			Class.forName("org.sqlite.JDBC");
 			System.out.println("connect:OK.");
-			System.setProperty("usr.dir",".");
-			String test_path = System.getProperty("usr.dir");
-			System.out.println("Path: " + test_path);
 			
 		}
 		catch(Exception error)
