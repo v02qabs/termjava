@@ -1,4 +1,5 @@
 import java.sql.Connection;
+import java.sql.*;
 public class Main
 {
 	public static void main(String[] args)
@@ -13,6 +14,7 @@ public class Main
 		{
 			Class.forName("org.sqlite.JDBC");
 			System.out.println("connect:OK.");
+			con = DriverManager.getConnection("jdbc:sqlite:");
 			
 		}
 		catch(Exception error)
