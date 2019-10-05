@@ -15,7 +15,10 @@ public class Main
 			Class.forName("org.sqlite.JDBC");
 			System.out.println("connect:OK.");
 			con = DriverManager.getConnection("jdbc:sqlite:../libs/sqlite3.jar");
-			
+
+			Statement st = concreateStatment();
+			String sql = "select * from user";
+			ResultSet rs = st
 		}
 		catch(Exception error)
 		{
