@@ -14,7 +14,7 @@ public class Main
 		{
 			Class.forName("org.sqlite.JDBC");
 			System.out.println("connect:OK.");
-			con = DriverManager.getConnection("jdbc:sqlite:");
+			con = DriverManager.getConnection("jdbc:sqlite:../libs/sqlite3.jar");
 			
 		}
 		catch(Exception error)
