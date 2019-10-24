@@ -16,9 +16,10 @@ public class Main
 			System.out.println("connect:OK.");
 			con = DriverManager.getConnection("jdbc:sqlite:../libs/sqlite3.jar");
 
-			Statement st = concreateStatment();
+			Statement st = con.createStatement();
 			String sql = "select * from user";
-			ResultSet rs = st
+			ResultSet rs = st.executeQuery(sql);
+			System.out.println(rs.getString("words"));
 		}
 		catch(Exception error)
 		{
